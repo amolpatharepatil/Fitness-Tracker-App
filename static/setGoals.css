@@ -1,0 +1,366 @@
+:root {
+	scroll-behavior: smooth;
+  }
+  
+  body {
+	font-family: "Open Sans", sans-serif;
+	color: #444444;
+  }
+  
+  a {
+	color: #4154f1;
+	text-decoration: none;
+  }
+  
+  a:hover {
+	color: #717ff5;
+	text-decoration: none;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+	font-family: "Nunito", sans-serif;
+  }
+
+
+  
+  /*--------------------------------------------------------------
+  # Sections
+  --------------------------------------------------------------*/
+  section {
+	padding: 60px 0;
+	overflow: hidden;
+  }
+  
+  .section-header {
+	text-align: center;
+	padding-bottom: 40px;
+  }
+  
+  .section-header h2 {
+	font-size: 13px;
+	letter-spacing: 1px;
+	font-weight: 700;
+	margin: 0;
+	color: #4154f1;
+	text-transform: uppercase;
+  }
+  
+  .section-header p {
+	margin: 10px 0 0 0;
+	padding: 0;
+	font-size: 38px;
+	line-height: 42px;
+	font-weight: 700;
+	color: #012970;
+  }
+  
+  @media (max-width: 768px) {
+	.section-header p {
+	  font-size: 28px;
+	  line-height: 32px;
+	}
+  }
+  
+  
+  /*--------------------------------------------------------------
+  # navbar
+  --------------------------------------------------------------*/
+  
+  .navbar{
+	padding: 0.8rem;
+	}
+	.navbar-nav li{
+	  padding-right: 20px;
+	}
+	.nav-link{
+	 font-size: 1.1em;
+	}
+
+  .navbar {
+	transition: all 0.5s;
+	z-index: 997;
+	padding: 20px 0;
+  }
+  
+  .navbar.header-scrolled {
+	background: #fff;
+	padding: 15px 0;
+	box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
+  }
+  
+  .navbar .logo {
+	line-height: 0;
+  }
+  
+  .navbar .logo img {
+	max-height: 40px;
+	margin-right: 6px;
+  }
+  
+  .navbar .logo span {
+	font-size: 30px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	color: #012970;
+	font-family: "Nunito", sans-serif;
+	margin-top: 3px;
+  }
+  .navbar-custom{
+	  background-color: rgb(172, 217, 231);
+  }
+  
+  /*--------------------------------------------------------------
+  # Navigation Menu
+  --------------------------------------------------------------*/
+  /**
+  * Desktop Navigation 
+  */
+  .navbar {
+	padding: 0;
+  }
+  
+  .navbar ul {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	list-style: none;
+	align-items: center;
+  }
+  
+  .navbar li {
+	position: relative;
+  }
+  
+  .navbar a {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px 0 10px 30px;
+	font-family: "Nunito", sans-serif;
+	font-size: 16px;
+	font-weight: 700;
+	color: #013289;
+	white-space: nowrap;
+	transition: 0.3s;
+  }
+  
+  .navbar a i {
+	font-size: 12px;
+	line-height: 0;
+	margin-left: 5px;
+  }
+  
+  .navbar a:hover, .navbar .active, .navbar li:hover > a {
+	color: #4154f1;
+  }
+  
+  .navbar .getstarted {
+	background: #4154f1;
+	padding: 8px 20px;
+	margin-left: 30px;
+	border-radius: 4px;
+	color: #fff;
+  }
+  
+  .navbar .getstarted:hover {
+	color: #fff;
+	background: #5969f3;
+  }
+  
+
+  
+  /*--------------------------------------------------------------
+  # Hero Section
+  --------------------------------------------------------------*/
+  
+  .hero .inner{
+      overflow: hidden;
+
+  }
+  .hero .inner img{
+      transition: all 1.5s ease;
+  }
+.hero .inner:hover img{
+    transform: scale(1.5);
+}
+.hero .container .card{
+	left: 18rem;
+	
+}
+  
+  .hero {
+	width: 100%;
+	height: 90vh;
+	background: url(../static/images/background.png) top center no-repeat;
+	background-size: cover;
+  }
+  
+  
+  .hero .btn-get-started {
+	margin-top: 30px;
+	line-height: 0;
+	padding: 15px 40px;
+	border-radius: 4px;
+	transition: 0.5s;
+	color: #fff;
+	background: #4154f1;
+	box-shadow: 0px 5px 30px rgba(65, 84, 241, 0.4);
+  }
+  
+  .hero .btn-get-started span {
+	font-family: "Nunito", sans-serif;
+	font-weight: 600;
+	font-size: 16px;
+	letter-spacing: 1px;
+  }
+  
+  .hero .btn-get-started i {
+	margin-left: 5px;
+	font-size: 18px;
+	transition: 0.3s;
+  }
+  
+  .hero .btn-get-started:hover i {
+	transform: translateX(5px);
+  }
+  
+  .hero .hero-img {
+	text-align: right;
+  }
+  
+  @media (min-width: 1024px) {
+	.hero {
+	  background-attachment: fixed;
+	}
+  }
+  
+  @media (max-width: 991px) {
+	.hero {
+	  height: auto;
+	  padding: 120px 0 60px 0;
+	}
+	.hero .hero-img {
+	  text-align: center;
+	  margin-top: 80px;
+	}
+	.hero .hero-img img {
+	  width: 80%;
+	}
+  }
+  
+  @media (max-width: 768px) {
+	.hero {
+	  text-align: center;
+	}
+	.hero h1 {
+	  font-size: 32px;
+	}
+	.hero h2 {
+	  font-size: 24px;
+	}
+	.hero .hero-img img {
+	  width: 100%;
+	}
+  }
+  /*--------------------------------------------------------------
+# Sections
+--------------------------------------------------------------*/
+section {
+	padding: 60px 0;
+	overflow: hidden;
+  }
+  
+  .section-header {
+	text-align: center;
+	padding-bottom: 40px;
+  }
+  
+  .section-header h2 {
+	font-size: 18px;
+	letter-spacing: 1px;
+	font-weight: 700;
+	margin: 0;
+	color: #4154f1;
+	text-transform: uppercase;
+  }
+  
+  .section-header p {
+	margin: 10px 0 0 0;
+	padding: 0;
+	font-size: 38px;
+	line-height: 42px;
+	font-weight: 700;
+	color: #012970;
+  }
+  
+  @media (max-width: 768px) {
+	.section-header p {
+	  font-size: 28px;
+	  line-height: 32px;
+	}
+  }
+
+
+
+.hero .form-group{
+	left: 5rem;
+}
+  
+
+
+
+#container {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    background-color: transparent;
+    text-align: center;
+	left: 15rem;
+    
+}
+
+#img {
+    max-width: 30%;
+    position: absolute;
+    top: 20%;
+    left: 50rem;
+}
+
+#form {
+    position: absolute;
+    max-width: 95%;
+    max-height: 95%;
+    top: 15%;
+    left: 13%;
+}
+
+.container-form p {
+    position: absolute;
+    font-size: xx-large;
+    top: 1rem;
+    left: 10rem;
+    text-align: center;
+}
+
+.form-control {
+    padding: 5px;
+    margin: 10px;
+}
+
+.container-form {
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    height: 60%;
+    width: 30%;
+    background-color: #c0ebf3;
+    border: 2px solid #C0C0C0;
+    border-radius: 20px;
+}
+
+
+#but {
+    position: absolute;
+    left: 40%;
+}

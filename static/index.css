@@ -1,0 +1,168 @@
+:root {
+	scroll-behavior: smooth;
+  }
+  
+  body {
+	font-family: "Open Sans", sans-serif;
+	color: #444444;
+  }
+  
+  a {
+	color: #4154f1;
+	text-decoration: none;
+  }
+  
+  a:hover {
+	color: #717ff5;
+	text-decoration: none;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+	font-family: "Nunito", sans-serif;
+  }
+
+
+.carousel-item {
+	height: 100vh;
+	min-height: 300px;
+	
+}
+.carousel-caption {
+	bottom: 220px;
+}
+.carousel-caption h5 {
+	font-size: 45px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin-top: 25px;
+	font-family: merienda;
+}
+.carousel-caption p {
+	width: 60%;
+	margin: auto;
+	font-size: 18px;
+	line-height: 1.9;
+	font-family: poppins;
+}
+.carousel-caption a {
+	text-transform: uppercase;
+	background: #262626;
+	padding: 10px 30px;
+	display: inline-block;
+	color: #fff;
+	margin-top: 15px;
+}
+.carousel-item img{
+	filter: blur(10px);
+}
+
+/* Get Startet Button */
+.get-started-btn {
+  color: #fff;
+  border-radius: 4px;
+  padding: 7px 25px 8px 25px;
+  white-space: nowrap;
+  transition: 0.3s;
+  font-size: 14px;
+  display: inline-block;
+  border: 2px solid #ffc451;
+  text-decoration: none;
+}
+
+.get-started-btn:hover {
+  background: #ffbb38;
+  color: #343a40;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .get-started-btn {
+	font-size: 8px;
+    margin: 0 48px 0 0;
+    padding: 7px 20px 8px 20px;
+  }
+
+
+}
+
+
+/*--------------------------------------------------------------
+  # Header
+  --------------------------------------------------------------*/
+  .header {
+	transition: all 0.5s;
+	z-index: 997;
+	padding: 20px 0;
+  }
+  
+  .header.header-scrolled {
+	background: #fff;
+	padding: 15px 0;
+	box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
+  }
+  
+  .header .logo {
+	line-height: 0;
+  }
+  
+  .header .logo img {
+	max-height: 40px;
+	margin-right: 6px;
+  }
+  
+  .header .logo span {
+	font-size: 30px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	color: #fff;
+	font-family: "Nunito", sans-serif;
+	margin-top: 3px;
+	text-decoration: none;
+  }
+/*--------------------------------------------------------------
+# Team
+--------------------------------------------------------------*/
+.team {
+	background: #fff;
+	padding: 60px 0;
+  }
+  
+  .team .member {
+	margin-bottom: 20px;
+	overflow: hidden;
+	border-radius: 5px;
+	background: #fff;
+	box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .team .member .member-img {
+	position: relative;
+	overflow: hidden;
+  }
+  
+ 
+  .team .member .member-info {
+	padding: 25px 15px;
+  }
+  
+  .team .member .member-info h4 {
+	font-weight: 700;
+	margin-bottom: 5px;
+	font-size: 18px;
+	color: #151515;
+  }
+  
+  .team .member .member-info span {
+	display: block;
+	font-size: 13px;
+	font-weight: 400;
+	color: #aaaaaa;
+  }
+  
+  .team .member .member-info p {
+	font-style: italic;
+	font-size: 14px;
+	line-height: 26px;
+	color: #777777;
+  }
+  

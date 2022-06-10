@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+	 <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+
+	 <link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" rel="stylesheet">
+   
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../static/dashboard.css" />
+    <title>UpFit</title>
+  </head>
+  
+
+<body>
+
+<!--- Navbar top--->
+<nav class="navbar navbar-expand-md navbar-light navbar-custom sticky-top">
+	<div class="container-fluid">
+
+
+		<a href="/dashboard?email={{email}}" class="logo d-flex align-items-center">
+			<img src="/static/images/login.svg" alt="">
+			<span>UpFit</span>
+		  </a>
+		
+	   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+	<span class="navbar-toggler-icon"></span>
+   </button>
+   <div class="collapse navbar-collapse" id="navbarResponsive">
+  <ul class="navbar-nav ml-auto">
+	<li class="nav-item ">
+	  <a class="nav-link" href="/dashboard?email={{email}}">Home</a>
+	   </li>
+	   <li class="nav-item">
+		 <a class="nav-link" href="#services">About</a>
+	   </li>
+	   <li class="nav-item">
+		<a class="nav-link" href="/getSetGoals?email={{email}}">Set Goals</a>
+	  </li>
+	  <li class="nav-item">
+		<a class="nav-link" href="/getWorkoutPlan?email={{email}}">Workout Plan</a>
+	  </li>
+	 <li class="nav-item">
+		 <a class="nav-link" href="/getLogWeight?email={{email}}">Log Weight</a>
+	   </li>
+	 <li class="nav-item">
+		 <a class="nav-link" href="/getProgress?email={{email}}">Progress</a>
+	   </li>
+	   <li class="nav-item"><a class="getstarted scrollto" href="/login_signup">Logout</a></li>
+	 </ul>
+	 </div>
+   </div>
+	  </nav>
+
+	
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="hero d-flex align-items-center">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 d-flex flex-column justify-content-center">
+          <h1 data-aos="fade-up">If you don’t challenge yourself, you don’t know yourself</h1>
+          <h2 data-aos="fade-up" data-aos-delay="400">Take care of your body. It's the only place you have to live.</h2>
+
+        </div>
+        <div class="col-lg-6 hero-img" data-aos="zoom-out" data-aos-delay="200">
+          <img src="/static/images/dashboard1.svg" class="img-fluid" alt="">
+        </div>
+      </div>
+    </div>
+
+  </section><!-- End Hero -->
+
+ 
+  <!-- ======= Services Section ======= -->
+	<section id="services" class="services">
+
+		<div class="container" data-aos="fade-up">
+
+			<header class="section-header">
+				<h2>Exercises</h2>
+				<p>Top 6 Exercises for Beginners</p>
+			</header>
+
+			<div class="row gy-4">
+
+				<div class="col-lg-4 mt-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+					<div class="service-box blue">
+						<i class="ri-discuss-line icon">Lunges</i>
+						<h3>Lunges</h3>
+						<p>Challenging your balance is an essential part of a well-rounded exercise routine. Lunges do just that, promoting functional movement, while also increasing strength in your legs and glutes.	
+						</p>
+					
+					</div>
+				</div>
+
+				<div class="col-lg-4 mt-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+					<div class="service-box orange">
+						<i class="ri-discuss-line icon">Pushups</i>
+						<h3>Pushups</h3>
+						<p>Drop and give me 20! Pushups are one of the most basic, yet effective, body weight moves you can perform because of the number of muscles that are recruited to perform them.</p>
+						
+					</div>
+				</div>
+
+				<div class="col-lg-4  mt-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+					<div class="service-box green">
+						<i class="ri-discuss-line icon">Squats</i>
+						<h3>Squats</h3>
+						<p>Squats increase lower body and core strength, as well as flexibility in your lower back and hips. Because they engage some of the largest muscles in the body.</p>
+						
+					</div>
+				</div>
+
+				<div class="col-lg-4  mt-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+					<div class="service-box red">
+						<i class="ri-discuss-line icon">Planks</i>
+						<h3>Side planks</h3>
+						<p>A healthy body requires a strong core at its foundation, so don’t neglect core-specific moves like the side plank.Focus on the mind-muscle connection.</p>
+					
+					</div>
+				</div>
+
+				<div class="col-lg-4  mt-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+					<div class="service-box purple">
+						<i class="ri-discuss-line icon">Dumbell</i>
+						<h3>Dumbbell rows</h3>
+						<p>Not only will these make your back look killer in that dress, but dumbbell rows are also another compound exercise that strengthens multiple muscles in your upper body.</p>
+						
+					</div>
+				</div>
+
+				<div class="col-lg-4  mt-4 col-md-6" data-aos="fade-up" data-aos-delay="700">
+					<div class="service-box pink">
+						<i class="ri-discuss-line icon">Planks</i>
+						<h3>Planks</h3>
+						<p>Planks are an effective way to target both your abdominal muscles and your whole body. Planking stabilizes your core without straining your back the way situps or crunches might.</p>
+						
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+
+	</section><!-- End Services Section -->
+
+</body>
+</html>

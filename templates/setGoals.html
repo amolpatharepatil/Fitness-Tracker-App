@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" rel="stylesheet">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../static/setGoals.css" />
+    <title>Set Goals</title>
+</head>
+
+
+<body>
+
+    <!--- Navbar top--->
+    <nav class="navbar navbar-expand-md navbar-light navbar-custom sticky-top">
+        <div class="container-fluid">
+    
+    
+            <a href="/dashboard?email={{email}}" class="logo d-flex align-items-center">
+                <img src="/static/images/login.svg" alt="">
+                <span>UpFit</span>
+              </a>
+            
+           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+        <span class="navbar-toggler-icon"></span>
+       </button>
+       <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item ">
+          <a class="nav-link" href="/dashboard?email={{email}}">Home</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" href="#services">About</a>
+           </li>
+           <li class="nav-item">
+            <a class="nav-link" href="/getSetGoals?email={{email}}">Set Goals</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/getWorkoutPlan?email={{email}}">Workout Plan</a>
+          </li>
+         <li class="nav-item">
+             <a class="nav-link" href="/getLogWeight?email={{email}}">Log Weight</a>
+           </li>
+         <li class="nav-item">
+             <a class="nav-link" href="/getProgress?email={{email}}">Progress</a>
+           </li>
+           <li class="nav-item"><a class="getstarted scrollto" href="/login_signup">Logout</a></li>
+         </ul>
+         </div>
+       </div>
+          </nav>
+
+    <!-- ======= Hero Section ======= -->
+    <section id="hero" class="hero d-flex align-items-center">
+
+
+
+        <div class="container1">
+            <div class="flex-column">
+                <div class="col-lg-6 mt-4">
+                    <div class="col-lg-6 d-flex flex-column justify-content-center">
+                        <div class="card shadow" style="width:18rem">
+                            <div class="inner">
+                                <img class="card-img-top" src="/static/images/goals1.svg" alt="Card image cap">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mt-4">
+                    <div class="col-lg-6 d-flex flex-column justify-content-center">
+                        <div class="card shadow" style="width:18rem">
+                            <div class="inner">
+                                <img class="card-img-top" src="/static/images/goals2.svg" alt="Card image cap">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <form action="/setGoals?email={{email}}" method="POST">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 d-flex flex-column justify-content-center">
+                        <div id="container">
+                            <img src="../static/images/setGoals.svg" id="img">
+
+                            <div class="col-lg-8 d-flex flex-column justify-content-center">
+                                <div class="card shadow" style="width: 20rem;">
+                                    <div class="inner">
+                                        <img class="card-img-top" src="/static/images/girl.svg" alt="Card image cap">
+
+                                    </div>
+                                    <div class="card-body text-center">
+                                        <h4 class="card-title">Set your Goals</h4>
+                                        <div class="form">
+
+
+                                            <div class="form-group ">
+
+                                                <div class="col-sm-10 text-center">
+                                                    <input type="number" name="currentWeight" class="form-control"
+                                                        id="inputEmail3" placeholder="Current Wt(Ex.80Kg)" required>
+                                                </div>
+
+                                                <div class="col-sm-10">
+                                                    <input type="number" name="targetWeight" class="form-control"
+                                                        id="inputPassword3" placeholder="Target Wt(Ex.60Kg)" required>
+                                                </div>
+
+                                            </div>
+
+
+                                            <div class="form-group">
+
+                                                <select name="intensity" class="form-control"
+                                                    id="exampleFormControlSelect1">
+                                                    {% for one in plans %}
+                                                    <option>{{one['Plan Name']}}</option>
+                                                    {% endfor %}
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <input type="submit" class="btn btn-primary" value="Go ahead" /> 
+                                        <!-- <a href="#" class="btn btn-primary">Go ahead</a> -->
+                                    </div>
+                                </div>
+                            </div>
+        </form>
+
+        </div>
+        </div>
+        </div>
+        </div>
+
+
+    </section><!-- End Hero -->
+
+
+
+
+
+</body>
+
+</html>
+

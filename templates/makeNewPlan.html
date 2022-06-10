@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" rel="stylesheet">
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+	<script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" href="../static/makeNewPlan.css">
+	<title>Make New Plan</title>
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-md navbar-light navbar-custom sticky-top">
+		<div class="container-fluid">
+
+
+			<a href="/dashboard?email={{email}}" class="logo d-flex align-items-center">
+				<img src="/static/images/login.svg" alt="">
+				<span>UpFit</span>
+			</a>
+
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item ">
+						<a class="nav-link" href="/dashboard?email={{email}}">Home</a>
+					</li>
+					<li class="nav-item"><a class="getstarted scrollto" href="/login_signup">Logout</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div class="all">
+		<img src="../static/images/plan.svg" class="big">
+		<div class="formContainer">
+			<form action="/savenewplan?email={{email}}">
+
+				<div class="container">
+					<div class="day">
+						Monday
+					</div>
+					<div class="exerciseContainer">
+						<select class="sub col" name="email" id="email">
+							<option value="{{email}}">Select</option>
+							{% for exer in workouts %}
+							<option value="{{email}}">{{exer}}</option>
+							{% endfor %}
+						</select>
+						<select class="sub col" name="Monday2" id="Monday2">
+							<option value="0">Select</option>
+							{% for exer in workouts %}
+							<option value="{{exer}}">{{exer}}</option>
+							{% endfor %}
+						</select>
+						<select class="sub col" name="Monday3" id="Monday3">
+							<option value="0">Select</option>
+							{% for exer in workouts %}
+							<option value="{{exer}}">{{exer}}</option>
+							{% endfor %}
+						</select>
+						<select class="sub col" name="Monday4" id="Monday4">
+							<option value="0">Select</option>
+							{% for exer in workouts %}
+							<option value="{{exer}}">{{exer}}</option>
+							{% endfor %}
+						</select>
+						<select class="sub col" name="Monday5" id="Monday5">
+							<option value="0">Select</option>
+							{% for exer in workouts %}
+							<option value="{{exer}}">{{exer}}</option>
+							{% endfor %}
+						</select>
+					</div>
+				</div>
+
+				<div class="container">
+					<div class="day">
+						Tuesday
+					</div>
+					<div class="exerciseContainer">
+						<select class="sub col" name="Tuesday1" id="Tuesday1">
+							<option value="0">Select</option>
+							{% for exer in workouts %}
+							<option value="{{exer}}">{{exer}}</option>
+							{% endfor %}
+						</select>
+						<select class="sub col" name="Tuesday2" id="Tuesday2">
+							<option value="0">Select</option>
+							{% for exer in workouts %}
+							<option value="{{exer}}">{{exer}}</option>
+							{% endfor %}
+						</select>
+						<select class="sub col" name="Tuesday3" id="Tuesday3">
+							<option value="0">Select</option>
+							{% for exer in workouts %}
+							<option value="{{exer}}">{{exer}}</option>
+							{% endfor %}
+						</select>
+						<select class="sub col" name="Tuesday4" id="Tuesday4">
+							<option value="0">Select</option>
+							{% for exer in workouts %}
+							<option value="{{exer}}">{{exer}}</option>
+							{% endfor %}
+						</select>
+						<select class="sub col" name="Tuesday5" id="Tuesday5">
+							<option value="0">Select</option>
+							{% for exer in workouts %}
+							<option value="{{exer}}">{{exer}}</option>
+							{% endfor %}
+						</select>
+					</div>
+				</div>
+
+				<div class="container">
+					<div class="day">
+						Wednesday
+					</div>
+					<div class="exerciseContainer">
+						<select class="sub col" name="Wednesday1" id="Wednesday1">
+							<option value="0">Select</option>
+							{% for exer in workouts %}
+							<option value="{{exer}}">{{exer}}</option>
+							{% endfor %}
+						</select>
+						<select class="sub col" name="Wednesday2" id="Wednesday2">
+							<option value="0">Select</option>
+							{% for exer in workouts %}
+							<option value="{{exer}}">{{exer}}</option>
+							{% endfor %}
+						</select>
+						<select class="sub col" name="Wednesday3" id="Wednesday3">
+							<option value="0">Select</option>
+							{% for exer in workouts %}
+							<option value="{{exer}}">{{exer}}</option>
+							{% endfor %}
+						</select>
+						<select class="sub col" name="Wednesday4" id="Wednesday4">
+							<option value="0">Select</option>
+							{% for exer in workouts %}
+							<option value="{{exer}}">{{exer}}</option>
+							{% endfor %}
+						</select>
+						<select class="sub col" name="Wednesday5" id="Wednesday5">
+							<option value="0">Select</option>
+							{% for exer in workouts %}
+							<option value="{{exer}}">{{exer}}</option>
+							{% endfor %}
+						</select>
+					</div>
+				</div>
+
+				<div class="container">
+					<div class="day">
+						Thursday
+					</div>
+					<div class="exerciseContainer">
+						<select class="sub col" name="Thursday1" id="Thursday1">
+							<option value="0">Select</option>
+							{% for exer in workouts %}
+							<option value="{{exer}}">{{exer}}</option>
+							{% endfor %}
+						</select>
+						<select class="sub col" name="Thursday2" id="Thursday2">
+							<option value="0">Select</option>
+							{% for exer in workouts %}
+							<option value="{{exer}}">{{exer}}</option>
+							{% endfor %}
+						</select>
+						<select class="sub col" name="Thursday3" id="Thursday3">
+							<option value="0">Select</option>
+							{% for exer in workouts %}
+							<option value="{{exer}}">{{exer}}</option>
+							{% endfor %}
+						</select>
+						<select class="sub col" name="Thursday4" id="Thursday4">
+							<option value="0">Select</option>
+							{% for exer in workouts %}
+							<option value="{{exer}}">{{exer}}</option>
+							{% endfor %}
+						</select>
+						<select class="sub col" name="Thursday5" id="Thursday5">
+							<option value="0">Select</option>
+							{% for exer in workouts %}
+							<option value="{{exer}}">{{exer}}</option>
+							{% endfor %}
+						</select>
+					</div>
+				</div>
+
+				<div class="container">
+					<div class="day">
+						Friday
+					</div>
+					<div class="exerciseContainer">
+						<select class="sub col" name="Friday1" id="Friday1">
+							<option value="0">Select</option>
+							{% for exer in workouts %}
+							<option value="{{exer}}">{{exer}}</option>
+							{% endfor %}
+						</select>
+						<select class="sub col" name="Friday2" id="Friday2">
+							<option value="0">Select</option>
+							{% for exer in workouts %}
+							<option value="{{exer}}">{{exer}}</option>
+							{% endfor %}
+						</select>
+						<select class="sub col" name="Friday3" id="Friday3">
+							<option value="0">Select</option>
+							{% for exer in workouts %}
+							<option value="{{exer}}">{{exer}}</option>
+							{% endfor %}
+						</select>
+						<select class="sub col" name="Friday4" id="Friday4">
+							<option value="0">Select</option>
+							{% for exer in workouts %}
+							<option value="{{exer}}">{{exer}}</option>
+							{% endfor %}
+						</select>
+						<select class="sub col" name="Friday5" id="Friday5">
+							<option value="0">Select</option>
+							{% for exer in workouts %}
+							<option value="{{exer}}">{{exer}}</option>
+							{% endfor %}
+						</select>
+					</div>
+				</div>
+
+				<div class="container">
+					<div class="day">
+						Saturday
+					</div>
+					<div class="exerciseContainer">
+						<select class="sub col" name="saturday1" id="saturday1">
+							<option value="0">Select</option>
+							{% for exer in workouts %}
+							<option value="{{exer}}">{{exer}}</option>
+							{% endfor %}
+						</select>
+						<select class="sub col" name="saturday2" id="saturday2">
+							<option value="0">Select</option>
+							{% for exer in workouts %}
+							<option value="{{exer}}">{{exer}}</option>
+							{% endfor %}
+						</select>
+						<select class="sub col" name="saturday3" id="saturday3">
+							<option value="0">Select</option>
+							{% for exer in workouts %}
+							<option value="{{exer}}">{{exer}}</option>
+							{% endfor %}
+						</select>
+						<select class="sub col" name="saturday4" id="saturday4">
+							<option value="0">Select</option>
+							{% for exer in workouts %}
+							<option value="{{exer}}">{{exer}}</option>
+							{% endfor %}
+						</select>
+						<select class="sub col" name="saturday5" id="saturday5">
+							<option value="0">Select</option>
+							{% for exer in workouts %}
+							<option value="{{exer}}">{{exer}}</option>
+							{% endfor %}
+						</select>
+					</div>
+				</div>
+
+				<input type="submit" value="make plan" class="sub col2">
+
+			</form>
+		</div>
+	</div>
+</body>
+
+</html>

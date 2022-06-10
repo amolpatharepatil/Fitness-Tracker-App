@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" rel="stylesheet">
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../static/logWeight.css" />
+  <link rel="stylesheet" href="../static/showExcercise.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Excercise for day</title>
+</head>
+
+<body>
+  <header class="section-header">
+
+    <p>{{intensity}}</p>
+  </header>
+
+  {% for i in range(0,length) %}
+  {% if sets[i] == 0 %}
+  <div class="container">
+    <div class="card">
+      <div class="img">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7zmr2u7USSiQGpfBAsgSPWXzs_ty3mJTVyQ&usqp=CAU">
+      </div>
+      <div class="top-text">
+        <div class="name">#{{i+1}}</div>
+        <p>{{exercises[i]}}</p>
+      </div>
+      <div class="bottom-text">
+        <div class="text">
+          <p>As much as possible</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  {% else %}
+  <div class="container">
+    <div class="card">
+      <div class="img">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7zmr2u7USSiQGpfBAsgSPWXzs_ty3mJTVyQ&usqp=CAU">
+      </div>
+      <div class="top-text">
+        <div class="name">#{{i+1}}</div>
+        <p>{{exercises[i]}}</p>
+      </div>
+      <div class="bottom-text">
+        <div class="text">
+          <p>Reps</p>
+          <p>{{reps[i]}}</p>
+          <br>
+          <p>Sets</p>
+          <p>{{sets[i]}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  {% endif %}
+  {% endfor %}
+
+</body>
+
+</html>

@@ -1,0 +1,266 @@
+  /*--------------------------------------------------------------
+  # navbar
+  --------------------------------------------------------------*/
+  
+	a:hover {
+		text-decoration: none;
+	}
+
+  .navbar{
+	padding: 0.8rem;
+	}
+	.navbar-nav li{
+	  padding-right: 20px;
+	}
+	.nav-link{
+	 font-size: 1.1em;
+	}
+
+  .navbar {
+	transition: all 0.5s;
+	z-index: 997;
+	padding: 20px 0;
+  }
+  
+  .navbar.header-scrolled {
+	background: #fff;
+	padding: 15px 0;
+	box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
+  }
+  
+  .navbar .logo {
+	line-height: 0;
+  }
+  
+  .navbar .logo img {
+	max-height: 40px;
+	margin-right: 6px;
+  }
+  
+  .navbar .logo span {
+	font-size: 30px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	color: #012970;
+	font-family: "Nunito", sans-serif;
+	margin-top: 3px;
+  }
+  .navbar-custom{
+	  background-color: rgb(172, 217, 231);
+  }
+  
+  /*--------------------------------------------------------------
+  # Navigation Menu
+  --------------------------------------------------------------*/
+  /**
+  * Desktop Navigation 
+  */
+  .navbar {
+	padding: 0;
+  }
+  
+  .navbar ul {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	list-style: none;
+	align-items: center;
+  }
+  
+  .navbar li {
+	position: relative;
+  }
+  
+  .navbar a {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px 0 10px 30px;
+	font-family: "Nunito", sans-serif;
+	font-size: 16px;
+	font-weight: 700;
+	color: #013289;
+	white-space: nowrap;
+	transition: 0.3s;
+  }
+  
+  .navbar a i {
+	font-size: 12px;
+	line-height: 0;
+	margin-left: 5px;
+  }
+  
+  .navbar a:hover, .navbar .active, .navbar li:hover > a {
+	color: #4154f1;
+  }
+  
+  .navbar .getstarted {
+	background: #4154f1;
+	padding: 8px 20px;
+	margin-left: 30px;
+	border-radius: 4px;
+	color: #fff;
+  }
+  
+  .navbar .getstarted:hover {
+	color: #fff;
+	background: #5969f3;
+  }
+
+
+.bap {
+	display: grid;
+	grid-template-columns: repeat(8, 1fr);
+}
+
+.size {
+	grid-column-start: 1;
+	grid-column-end: 9;
+}
+
+.check-progress-container {
+	display: grid;
+	grid-template-columns: repeat(8, 1fr);
+}
+
+.section-header {
+	font-size: xx-large;
+	font-weight: bolder;
+	grid-column-start: 1;
+	grid-column-end: 9;
+	color: #2c2c2c;
+	padding: 5% 0 5% 10%;
+}
+
+.dates-container {
+	padding: 0 10% 0 10%;
+	grid-column-start: 1;
+	grid-column-end: 6;
+	display: grid;
+	grid-gap: 30px;
+	grid-template-columns: repeat(auto-fill, 150px)
+}
+
+.big-image {
+	width: 80%;
+	grid-column-start: 6;
+	grid-column-end: 9;
+	align-self: center;
+}
+
+.dates {
+	height: 150px;
+	background-color: rgb(185, 255, 179);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border-radius: 10px;
+	color: #444444;
+	font-size: larger;
+	font-weight: bold;
+	box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+	transition-duration: .5s;
+}
+
+.dates:hover {
+	color: black;
+	box-shadow: none;
+}
+
+.big-size {
+	grid-column-start: 1;
+	grid-column-end: 4;
+	display: flex;
+	justify-content: center;
+	padding-top: 10%;
+	transition-duration: .3s;
+}
+
+.big-size p {
+	font-weight: 500;
+	color: black;
+	margin-right: 2%;
+}
+
+.big-size p, img:hover {
+	cursor: pointer;
+}
+
+modal {
+	visibility: hidden;
+	height: 40%;
+	width: 30%;
+	border-radius: 20px;
+	box-shadow: 10px 50px 100px rgba(0, 0, 0, 0.8);
+	position: absolute;
+	top: 30%;
+	left: 35%;
+	padding: 2% 4%;
+	background-image: linear-gradient(#b4f0e3, white);
+	display: flex;
+	flex-direction: column;
+	transition-duration: .5s;
+}
+
+.show {
+	visibility: visible;
+	box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.bluring {
+	filter: blur(10px);
+}
+
+modal p {
+	padding: 3% 0;
+	font-weight: bolder;
+	font-size: xx-large;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	margin-bottom: 10%;
+}
+
+modal form {
+	display: flex;
+	justify-content: space-around;
+}
+
+modal form input {
+	background: transparent;
+	padding: 2% 0;
+	width: 15%;
+	border: none;
+	font-size: large;
+	text-align: center;
+	font-weight: 500;
+	color: #444;
+}
+
+modal button {
+	position: absolute;
+	bottom: 12%;
+	right: 15%;
+	border: none;
+	border-radius: 10px;
+	padding: 10px 20px;
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: small;
+	color: #444;
+	background-color: rgb(170, 241, 163);
+}
+
+modal select {
+	border: none;
+	background: transparent;
+	font-size: larger;
+	font-weight: bolder;
+	color: #444;
+}
+
+modal button:hover {
+	color: black;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
